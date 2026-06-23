@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/users/notification"
+  url: "{{baseUrl}}/instructor/live-sessions/list/dashboard"
   auth:
     type: bearer
     token: "{{accessToken}}"

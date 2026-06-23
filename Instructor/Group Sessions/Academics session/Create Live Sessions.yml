@@ -5,13 +5,13 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/instructor/live-sessions/"
+  url: "{{baseUrl}}/instructor/live-sessions/create-live-sessions"
   body:
     type: json
     data: |-
       {
-        "title": " ",
-        "description": "Python programming  class for beginners",
+        "title": "",
+        "description": "",
         "category_id": "4aeba49b-d80e-41ff-8e2d-67e253c921b2",
         "level": "advanced",
         "languages": "english",
@@ -34,7 +34,7 @@ http:
         "schedules": [
           {
             "session_title": "Session 1",
-            "date": "2026-06-22 10:00",
+            "date": "2026-06-22 20:00",
             "duration_min": "30"
           }
         ]

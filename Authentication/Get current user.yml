@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: https://mw7wpcy6jtbduqe2jm63l4nm7i0brags.lambda-url.ap-south-1.on.aws/api/users/me
+  url: "{{baseUrl}}/users/me"
   auth:
     type: bearer
     token: "{{accessToken}}"

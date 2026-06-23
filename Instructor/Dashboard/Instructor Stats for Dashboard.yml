@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/instructor/get-profile-progress"
+  url: "{{baseUrl}}/instructor/instructor-stats-for-dashboard"
   auth:
     type: bearer
     token: "{{accessToken}}"
