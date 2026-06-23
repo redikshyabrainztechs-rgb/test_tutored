@@ -1,0 +1,50 @@
+info:
+  name: Create Live Sessions
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/instructor/live-sessions/create-live-sessions"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "",
+        "description": "",
+        "category_id": "4aeba49b-d80e-41ff-8e2d-67e253c921b2",
+        "level": "advanced",
+        "languages": "english",
+        "price": 400,
+        "min_seats": 1,
+        "max_seats": 10,
+        "visibility": "private",
+        "currency": "NPR",
+        "attachments": [
+          "course/attachments/89222_graduation_of_ram_hari.pdf"
+        ],
+        "tags": [],
+        "cover_image": "course/cover/71751_five_plus.jpg",
+        "live_session_type": "academics",
+        "university": "Tribhuvan",
+        "department": "CS",
+        "timezone": "Asia/Kathmandu",
+        "semester": "1st",
+        "faculty": "Science and Technology",
+        "schedules": [
+          {
+            "session_title": "Session 1",
+            "date": "2026-06-22 20:00",
+            "duration_min": "30"
+          }
+        ]
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: 1-on-1 session
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit

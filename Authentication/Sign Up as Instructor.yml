@@ -1,7 +1,7 @@
 info:
   name: Sign Up as Instructor
   type: http
-  seq: 3
+  seq: 4
 
 http:
   method: POST
@@ -10,9 +10,9 @@ http:
     type: json
     data: |+
       {
-        "firstname" : "Pro",
-        "lastname" : "Gress",
-        "email" : "redikshya.brainztechs+GG@gmail.com",
+        "firstname" : "Shristi",
+        "lastname" : "Niraula",
+        "email" : "redikshya.brainztechs+ney@gmail.com",
         "password" : "apple111@A",
         "phone_number" : "+9779861517237",
         "roletype" : "ROLE_INSTRUCTOR"

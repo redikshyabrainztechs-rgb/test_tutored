@@ -1,7 +1,7 @@
 info:
   name: About Instructor PUT
   type: http
-  seq: 7
+  seq: 6
 
 http:
   method: PUT
@@ -10,12 +10,12 @@ http:
     type: json
     data: |-
       {
-      "city": "Kathmandu",
-      "country": "India",
-      "detailed_bio": "detailed bio",
+      "city": "",
+      "country": "$%^^&",
+      "detailed_bio": "do",
       "languages_spoken": ["b266cc5b-d826-495a-a388-45e0887006f2", "b0b97f44-d607-493b-aa5c-100878f62b41"],
       "short_bio": 
-      "short bio cookies and biscuits"
+      "ss"
       }
   auth:
     type: bearer

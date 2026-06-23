@@ -1,11 +1,11 @@
 info:
-  name: Get current user
+  name: Get Profile Progress
   type: http
   seq: 3
 
 http:
   method: GET
-  url: "{{baseUrl}}/users/me"
+  url: "{{baseUrl}}/instructor/get-profile-progress"
   auth:
     type: bearer
     token: "{{accessToken}}"

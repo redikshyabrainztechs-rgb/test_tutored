@@ -10,11 +10,11 @@ http:
     type: json
     data: |+
       {
-        "firstname" : "Ro",
-        "lastname" : "Pe",
-        "email" : "redikshya.brainztechs+9@gmail.com",
-        "password" : "apple111@A",
-        "phone_number" : "+9779861517237",
+        "firstname" : "Reega",
+        "lastname" : "Poudel",
+        "email" : "redikshya.brainztechs+26@gmail.com",
+        "password" : "apple111@",
+        "phone_number" : "@@@",
         "roletype" : "ROLE_STUDENT"
       }
 

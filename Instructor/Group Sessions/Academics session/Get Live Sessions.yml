@@ -1,17 +1,17 @@
 info:
-  name: Video Introduction
+  name: Get Live Sessions
   type: http
-  seq: 9
+  seq: 2
 
 http:
-  method: POST
-  url: "{{baseUrl}}/instructor/video-intro"
+  method: GET
+  url: "{{baseUrl}}/instructor/list/live-sessions/"
   body:
     type: json
-    data: '{"video_url": ""}'
+    data: ""
   auth:
     type: bearer
-    token: "{{accessToekn}}"
+    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true

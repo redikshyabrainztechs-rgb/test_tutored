@@ -1,11 +1,11 @@
 info:
-  name: Get current user
+  name: Dashboard
   type: http
-  seq: 3
+  seq: 2
 
 http:
   method: GET
-  url: "{{baseUrl}}/users/me"
+  url: "{{baseUrl}}/instructor/live-sessions/list/dashboard"
   auth:
     type: bearer
     token: "{{accessToken}}"

@@ -10,8 +10,8 @@ http:
     type: json
     data: |
       {
-        "date_of_birth" : "2010-01-01" ,
-        "email" : "redikshya.brainztechs+000@gmail.com",
+        "date_of_birth" : "@@@" ,
+        "email" : "apple",
         "firstname" : "REDIKSHYA",
         "lastname" : "PHUYAL",
         "linkedin" : "https://linkedin.com/in/a",

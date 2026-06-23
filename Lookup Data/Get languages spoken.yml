@@ -1,14 +1,12 @@
 info:
-  name: Get current user
+  name: Get languages spoken
   type: http
-  seq: 3
+  seq: 11
 
 http:
   method: GET
-  url: "{{baseUrl}}/users/me"
-  auth:
-    type: bearer
-    token: "{{accessToken}}"
+  url: "{{baseUrl}}/group/language"
+  auth: inherit
 
 settings:
   encodeUrl: true
