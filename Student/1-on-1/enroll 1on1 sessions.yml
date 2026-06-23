@@ -1,0 +1,24 @@
+info:
+  name: enroll 1on1 sessions
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseUrl}}/student/enroll"
+  body:
+    type: json
+    data: |-
+      {
+        "payment_status" : "COMPLETE",
+      "transaction_id" : "bcd951c0-f1f5-4a4b-a724-0ed96aac6583"
+      }
+  auth:
+    type: bearer
+    token: "{{accesstoken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

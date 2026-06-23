@@ -1,0 +1,40 @@
+info:
+  name: Register account
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/auth/register"
+  body:
+    type: json
+    data: |-
+      {
+        "email"
+      : 
+      "smirti.brainztechs+03@gmail.com",
+      "firstname"
+      : 
+      "tina",
+      "lastname"
+      : 
+      "Sija",
+      "password"
+      : 
+      "Smirtibam123@",
+      "phone_number"
+      : 
+      "+9779761207415",
+      "roletype"
+      : 
+      "ROLE_STUDENT"
+      }
+  auth:
+    type: bearer
+    token: "{{accesstoken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

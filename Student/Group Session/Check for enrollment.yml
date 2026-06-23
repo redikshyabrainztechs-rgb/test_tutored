@@ -1,0 +1,24 @@
+info:
+  name: Check for enrollment
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/student/check-for-enrollment"
+  body:
+    type: json
+    data: |
+      {
+        "product_id" : "4921af50-4c66-4de0-83c3-064b56bfc8bc",
+        "product_type": "live_session"
+      }
+  auth:
+    type: bearer
+    token: "{{accesstoken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,32 @@
+info:
+  name: Update profile
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/users/update"
+  body:
+    type: json
+    data: |-
+      {
+        "address" : "America",
+      "bio" : "qwee",
+      "country" : "India",
+      "first_name" : "sita",
+      "last_name" : "shahi",
+      "linkedin" : "",
+      "mid_name" : "",
+      "phone" : "+9779761207415",
+      "profile_pic" : "",
+      "website" : ""
+      }
+  auth:
+    type: bearer
+    token: "{{accesstoken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

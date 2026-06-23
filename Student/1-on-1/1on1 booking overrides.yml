@@ -1,0 +1,20 @@
+info:
+  name: 1on1 booking overrides
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/student/bafd2295-200f-4737-bde0-af3306620b17/2026/5/list-bookings-overrides"
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: "{{accesstoken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
