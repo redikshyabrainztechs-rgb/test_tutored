@@ -10,28 +10,16 @@ http:
     type: json
     data: |-
       {
-        "email"
-      : 
-      "smirti.brainztechs+03@gmail.com",
-      "firstname"
-      : 
-      "tina",
-      "lastname"
-      : 
-      "Sija",
-      "password"
-      : 
-      "Smirtibam123@",
-      "phone_number"
-      : 
-      "+9779761207415",
-      "roletype"
-      : 
-      "ROLE_STUDENT"
+        "email":"smirti.brainztechs+3@gmail.com",
+      "firstname":"tina",
+      "lastname":"Sija",
+      "password":"Smirtibam123@",
+      "phone_number":"+9779761207415",
+      "roletype":"ROLE_STUDENT"
       }
   auth:
     type: bearer
-    token: "{{accesstoken}}"
+    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true

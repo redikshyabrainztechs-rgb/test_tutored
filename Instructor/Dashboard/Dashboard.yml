@@ -6,6 +6,9 @@ info:
 http:
   method: GET
   url: "{{baseUrl}}/instructor/live-sessions/list/dashboard"
+  body:
+    type: json
+    data: ""
   auth:
     type: bearer
     token: "{{accessToken}}"

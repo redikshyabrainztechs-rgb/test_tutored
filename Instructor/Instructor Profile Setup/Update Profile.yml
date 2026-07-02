@@ -1,0 +1,32 @@
+info:
+  name: Update Profile
+  type: http
+  seq: 9
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/users/update"
+  body:
+    type: json
+    data: |-
+      {
+        "first_name":"Ram",
+        "mid_name":"",
+        "last_name":"Shah",
+        "profile_pic":"users/b6b78f54-e594-4200-a9a9-e648e1c    9ac0a/profile/43650_kathmandu.jpg",
+        "phone":"+9779761207415",
+        "bio":"Best instructor",
+        "address":"kathmandu",
+        "country":"Nepal",
+        "linkedin":"https://app.slack.com/client/T03E754GG57    /D0BDR40GB",
+        "website":""
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

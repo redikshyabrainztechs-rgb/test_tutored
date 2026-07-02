@@ -1,11 +1,14 @@
 info:
   name: Intructor Avalilability
   type: http
-  seq: 8
+  seq: 6
 
 http:
   method: GET
   url: "{{baseUrl}}/instructor/instructor-stats-for-session"
+  body:
+    type: json
+    data: ""
   auth:
     type: bearer
     token: "{{accessToken}}"

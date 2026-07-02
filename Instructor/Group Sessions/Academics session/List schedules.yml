@@ -1,11 +1,11 @@
 info:
-  name: 1on1 session details
+  name: List schedules
   type: http
-  seq: 3
+  seq: 4
 
 http:
   method: GET
-  url: "{{baseUrl}}/student/list/session-bookings"
+  url: "{{baseUrl}}/instructor/live-sessions/1df25548-95bc-4baa-a785-5a85afaf19f2/list-schedules"
   body:
     type: json
     data: ""

@@ -1,0 +1,20 @@
+info:
+  name: 1 on 1 Booking
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/student/1on1-bookings"
+  body:
+    type: json
+    data: '{"session_type":"Online Video Call","booked_date":"2026-07-31","booked_times":["09:00"],"special_request":"","tutor_id":"6fb9c106-bbc7-4d01-94e9-df1211ef15b3","phone_number":"+9779761207415","otp":"798072","instructor_1on1_id":"84d3771b-50ae-4756-83dd-8f6a67c59b8c","student_timezone":"Asia/Kathmandu","student_booked_times":["09:00"]}'
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,29 @@
+info:
+  name: Create help
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/public/create-help"
+  body:
+    type: json
+    data: |-
+      {
+        "attachment": {},
+      "department": "student-support",
+      "email": "smirti.brainztechs+02@gmail.com",
+      "full_name": "undefined undefined",
+      "message": "erorororororororo",
+      "reason":"refund-request",
+      "subject": "wasdaaaaa"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,14 +1,14 @@
 info:
-  name: 1on1 session details
+  name: Has one on one
   type: http
-  seq: 3
+  seq: 7
 
 http:
-  method: GET
-  url: "{{baseUrl}}/student/list/session-bookings"
+  method: PUT
+  url: "{{baseUrl}}/instructor/update/has-one-on-one"
   body:
     type: json
-    data: ""
+    data: '{"status":true}'
   auth:
     type: bearer
     token: "{{accessToken}}"

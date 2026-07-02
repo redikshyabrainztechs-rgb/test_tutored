@@ -1,11 +1,11 @@
 info:
-  name: Get Session Topics (Software and tech)
+  name: Get Session Topics (languages)
   type: http
-  seq: 3
+  seq: 6
 
 http:
   method: GET
-  url: "{{baseUrl}}/groups/software-tech/items"
+  url: "{{baseUrl}}/groups/languages/items"
   body:
     type: json
     data: ""

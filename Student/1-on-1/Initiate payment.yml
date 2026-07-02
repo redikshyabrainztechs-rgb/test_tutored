@@ -1,7 +1,7 @@
 info:
   name: Initiate payment
   type: http
-  seq: 5
+  seq: 8
 
 http:
   method: GET
@@ -28,7 +28,7 @@ http:
       }
   auth:
     type: bearer
-    token: "{{accesstoken}}"
+    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true

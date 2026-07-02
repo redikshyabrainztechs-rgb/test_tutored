@@ -1,11 +1,14 @@
 info:
   name: Session Bookings
   type: http
-  seq: 6
+  seq: 2
 
 http:
   method: GET
   url: "{{baseUrl}}/instructor/get-one-on-one-details"
+  body:
+    type: json
+    data: ""
   auth:
     type: bearer
     token: "{{accessToken}}"

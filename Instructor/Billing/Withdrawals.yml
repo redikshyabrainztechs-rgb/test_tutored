@@ -1,17 +1,18 @@
 info:
-  name: Checkout sessions
+  name: Withdrawals
   type: http
   seq: 4
 
 http:
   method: POST
-  url: "{{baseUrl}}/student/checkout-session"
+  url: "{{baseUrl}}/instructor/withdrawals"
   body:
     type: json
     data: |-
       {
-        "product_id":"61e661e5-64b5-42ed-94e5-457e2b9c8e02",
-      "product_type":"1on1"
+      "amount":"44",
+      "notes":"Noooopppppeeee",
+      "payment_method":"bank"
       }
   auth:
     type: bearer

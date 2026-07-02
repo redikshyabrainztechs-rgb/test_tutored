@@ -1,0 +1,20 @@
+info:
+  name: Availability
+  type: http
+  seq: 9
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/instructor/availability"
+  body:
+    type: json
+    data: '{"instructor_1on1ID":"84d3771b-50ae-4756-83dd-8f6a67c59b8c","timezone":"Asia/Kathmandu","availability":[{"type":"Wednesday","available_time":[{"from":"09:00","to":"10:00"},{"from":"00:00","to":"01:00"}]},{"type":"Friday","available_time":[{"from":"09:00","to":"10:00"}]}],"removed_days":[]}'
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

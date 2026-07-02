@@ -1,11 +1,14 @@
 info:
   name: Update Session Basics
   type: http
-  seq: 9
+  seq: 8
 
 http:
-  method: GET
+  method: PUT
   url: "{{baseUrl}}/instructor/availability"
+  body:
+    type: json
+    data: '{"duration":60,"price":300,"currency":"NPR","description":"always on time"}'
   auth:
     type: bearer
     token: "{{accessToken}}"

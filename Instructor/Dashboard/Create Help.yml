@@ -1,0 +1,28 @@
+info:
+  name: Create Help
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/public/create-help"
+  body:
+    type: json
+    data: |-
+      {
+        "full_name":"Ram Shah",
+        "email":"smirti.brainztechs+006@gmail.com",
+        "department":"account",
+        "subject":"mee",
+        "message":"system problem",
+        "phone_number":"9822601167"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
