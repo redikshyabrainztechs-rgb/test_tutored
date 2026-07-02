@@ -5,15 +5,25 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/auth/login"
+  url: "{{baseURL}}/auth/login"
   body:
     type: json
     data: |-
       {
+<<<<<<< HEAD
         "email" : "smirti.brainztechs+004@gmail.com",
           "password" : "Smirtibam123@"
+=======
+        "email" :"redikshya.brainztechs+y@gmail.com",
+          "password" : "apple111@A"
+>>>>>>> 111cea3d9696567ffe0f8b71253f34cf94108442
       }
   auth: inherit
+
+runtime:
+  variables:
+    - name: baseURL
+      value: https://mw7wpcy6jtbduqe2jm63l4nm7i0brags.lambda-url.ap-south-1.on.aws/api
 
 settings:
   encodeUrl: true

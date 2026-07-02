@@ -1,0 +1,24 @@
+info:
+  name: "Get Instructor's Live Session Stats "
+  type: http
+  seq: 1
+
+http:
+  method: GET
+<<<<<<< HEAD:Instructor/1-on-1 session/Get One on One Details.yml
+  url: "{{baseUrl}}/instructor/instructor-stats-for-dashboard"
+  body:
+    type: json
+    data: ""
+=======
+  url: "{{baseUrl}}/instructor/live-sessions/stats"
+>>>>>>> 111cea3d9696567ffe0f8b71253f34cf94108442:Instructor/Group Sessions/Get Instructor's Live Session Stats.yml
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

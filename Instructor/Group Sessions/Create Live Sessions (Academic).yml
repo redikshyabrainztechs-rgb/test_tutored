@@ -1,7 +1,7 @@
 info:
-  name: Create Live Sessions
+  name: Create Live Sessions (Academic)
   type: http
-  seq: 1
+  seq: 3
 
 http:
   method: POST
@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "title": "",
+        "title": "Session Sample",
         "description": "",
         "category_id": "4aeba49b-d80e-41ff-8e2d-67e253c921b2",
         "level": "advanced",
@@ -34,7 +34,7 @@ http:
         "schedules": [
           {
             "session_title": "Session 1",
-            "date": "2026-06-22 20:00",
+            "date": "2026-06-22 10:00",
             "duration_min": "30"
           }
         ]

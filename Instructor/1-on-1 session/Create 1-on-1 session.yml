@@ -1,6 +1,7 @@
 info:
   name: Create 1-on-1 session
   type: http
+<<<<<<< HEAD
   seq: 4
 
 http:
@@ -12,6 +13,68 @@ http:
   auth:
     type: bearer
     token: "{{accessToken}}"
+=======
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/instructor/1on1/create"
+  body:
+    type: json
+    data: |-
+      // note : create new instructor for every test
+
+      {
+        "title": "English Conversation Practice",
+        "description": "One-on-one English speaking sessions focused on fluency, pronunciation, and confidence building.",
+        "default_session_length": 60,
+        "pricing": 25,
+        "currency": "NPR",
+        "free_first_lesson": true,
+        "cancellation_policy": 24,
+        "max_session_per_day": 5,
+        "allow_rescheduling": true,
+        "rescheduling": 12,
+        "minimum_notice": 6,
+        "availability_request": {
+          "timezone": "Asia/Kathmandu",
+          "availability": [
+            {
+              "type": "Monday",
+              "available_time": [
+                {
+                  "from": "09:00",
+                  "to": "12:00"
+                },
+                {
+                  "from": "14:00",
+                  "to": "18:00"
+                }
+              ]
+            },
+            {
+              "type": "Wednesday",
+              "available_time": [
+                {
+                  "from": "10:00",
+                  "to": "16:00"
+                }
+              ]
+            },
+            {
+              "type": "Friday",
+              "available_time": [
+                {
+                  "from": "09:00",
+                  "to": "13:00"
+                }
+              ]
+            }
+          ]
+        }
+      }
+  auth: inherit
+>>>>>>> 111cea3d9696567ffe0f8b71253f34cf94108442
 
 settings:
   encodeUrl: true

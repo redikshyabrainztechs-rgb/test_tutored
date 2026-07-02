@@ -1,0 +1,26 @@
+info:
+  name: Upload Attachments  for Live Session creation (image/jpeg)
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/aws/upload-url"
+  body:
+    type: json
+    data: |-
+      {
+        "file_name" : "Photography_Packages_Example_3.jpg",
+      "mime_type" : "image/jpeg",
+      "prefix" : 
+      "course/cover"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

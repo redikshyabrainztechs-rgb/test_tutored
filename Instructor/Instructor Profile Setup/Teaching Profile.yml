@@ -10,7 +10,6 @@ http:
     type: json
     data: |-
       {
-        "primary_category": "f8a55085-a805-4795-95d7-7dec59ee360f",
         "audience_levels": ["beginner", "intermediate"],
         "primary_category" : "f8a55085-a805-4795-95d7-7dec59ee360f", 
         "session_topics" :  ["880959f8-0790-4abb-9451-ff8f6fb673df", "ee556518-9c39-40f9-a3bc-35ac402991d4"],
@@ -18,7 +17,7 @@ http:
       }
   auth:
     type: bearer
-    token: "{{accessToekn}}"
+    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true

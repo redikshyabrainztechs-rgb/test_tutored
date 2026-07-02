@@ -11,15 +11,14 @@ http:
     data: |-
       {
       "city": "Kathmandu",
-      "country": "India",
+      "country": "Nepal",
       "detailed_bio": "detailed bio",
-      "languages_spoken": ["b266cc5b-d826-495a-a388-45e0887006f2", "b0b97f44-d607-493b-aa5c-100878f62b41"],
-      "short_bio": 
-      "short bio cookies and biscuits"
+      "languages_spoken": ["b266cc5b-d826-495a-a388-45e0887006f2","b266cc5b-d826-495a-a388-45e0887006f2"],
+      "short_bio": "short bio cookies and biscuits"
       }
   auth:
     type: bearer
-    token: "{{accessToekn}}"
+    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true

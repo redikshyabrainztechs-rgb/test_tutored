@@ -10,11 +10,19 @@ http:
     type: json
     data: |+
       {
+<<<<<<< HEAD
         "firstname" : "Reega",
         "lastname" : "Poudel",
         "email" : "smirti.brainztechs+002@gmail.com",
         "password" : "Bamsmirti123@",
         "phone_number" : "9761205415",
+=======
+        "firstname" : "Sign",
+        "lastname" : "Up",
+        "email" : "redikshya.brainztechs+00o@gmail.com",
+        "password" :"apple111@A",
+        "phone_number" : "9800916663",
+>>>>>>> 111cea3d9696567ffe0f8b71253f34cf94108442
         "roletype" : "ROLE_STUDENT"
       }
 

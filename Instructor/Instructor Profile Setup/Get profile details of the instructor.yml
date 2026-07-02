@@ -8,7 +8,7 @@ http:
   url: "{{baseUrl}}/instructor/get-profile-details"
   auth:
     type: bearer
-    token: "{{accessToekn}}"
+    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true

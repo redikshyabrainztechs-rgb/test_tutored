@@ -8,20 +8,20 @@ http:
   url: "{{baseUrl}}/instructor/basic-info"
   body:
     type: json
-    data: |
+    data: |-
       {
-        "date_of_birth" : "@@@" ,
-        "email" : "apple",
-        "firstname" : "REDIKSHYA",
-        "lastname" : "PHUYAL",
-        "linkedin" : "https://linkedin.com/in/a",
-        "middlename" : "a", 
+        "date_of_birth" : "2003-01-26" ,
+        "email" : "redikshya.brainztechs+z@gmail.com",
+        "firstname" : "Sajina",
+        "lastname" : "Shrestha",
+        "linkedin" : "https://www.linkedin.com/in/redikshya-phuyal-970153386/",
+        "middlename" : "kumari", 
         "phonenumber" : "+9779861517237",
         "profile_photo_url" :  "users/8549f3c2-2f8a-4450-af59-7abda80da950/profile/45558_five_plus.jpg"
       }
   auth:
     type: bearer
-    token: "{{accessToekn}}"
+    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true

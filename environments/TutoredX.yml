@@ -1,6 +1,13 @@
 name: TutoredX
 variables:
+<<<<<<< HEAD
   - secret: true
     name: baseUrl
   - secret: true
     name: accessToken
+=======
+  - name: baseURL
+    value: https://mw7wpcy6jtbduqe2jm63l4nm7i0brags.lambda-url.ap-south-1.on.aws/api
+  - name: accessToken
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODI3OTY0MDksImluc3RydWN0b3JfcHJvZmlsZV9pZCI6IjcyMTllZDJmLTZlY2UtNDM4MC05ZTk2LTUxNDNkY2E4ZGE2NyIsInJvbGVJZCI6IjBkYTFiYTY4LWVhMzYtNGU5Zi1hOThhLTZmYmVlOGRjNmI1YiIsInJvbGVfdHlwZSI6IlJPTEVfSU5TVFJVQ1RPUiIsInNlc3Npb25faWQiOiJjOWZkN2M5My03MTUyLTQ1NDQtYmFjNy1jNWQ3NmEzNWRlYjciLCJ1c2VySWQiOiIwY2Q2NDc0ZS0xODllLTQ3NmUtYWE3ZS1mYmU0Y2M1YmNlYTEifQ.k4qWgaenaW38oNWk42-AEArDcQiUW1089dnNgEiWmFo
+>>>>>>> 111cea3d9696567ffe0f8b71253f34cf94108442

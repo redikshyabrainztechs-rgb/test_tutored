@@ -8,10 +8,10 @@ http:
   url: "{{baseUrl}}/instructor/video-intro"
   body:
     type: json
-    data: '{"video_url": ""}'
+    data: '{"video_url": "https://youtu.be/w0lH5rLG4xA?si=0YkWdSLceofY0hc5"}'
   auth:
     type: bearer
-    token: "{{accessToekn}}"
+    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true

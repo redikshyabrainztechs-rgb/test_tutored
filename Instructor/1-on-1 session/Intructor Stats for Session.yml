@@ -1,7 +1,11 @@
 info:
   name: Intructor Stats for Session
   type: http
+<<<<<<< HEAD
   seq: 5
+=======
+  seq: 3
+>>>>>>> 111cea3d9696567ffe0f8b71253f34cf94108442
 
 http:
   method: GET

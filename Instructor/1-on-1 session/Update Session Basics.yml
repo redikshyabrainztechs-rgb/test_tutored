@@ -1,7 +1,11 @@
 info:
   name: Update Session Basics
   type: http
+<<<<<<< HEAD
   seq: 8
+=======
+  seq: 5
+>>>>>>> 111cea3d9696567ffe0f8b71253f34cf94108442
 
 http:
   method: PUT
